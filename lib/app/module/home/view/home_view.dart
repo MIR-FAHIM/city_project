@@ -58,6 +58,7 @@ class HomeView extends GetView<HomeController> {
                             Obx(() {
                               return Container(
                                 width: Get.width * .6,
+                                height: Get.height*.06,
                                 color: Colors.white,
                                 child: DropdownSearch<String>(
                                   label: "Select District",
@@ -100,7 +101,7 @@ class HomeView extends GetView<HomeController> {
                       bottom: 0,
                       left: 30,
                       right: 30,
-                      // top: 80,
+                      top: 100,
                       child: VxSwiper(
                               autoPlay: false,
                               viewportFraction: 1.0,
