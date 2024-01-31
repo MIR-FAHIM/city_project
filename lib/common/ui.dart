@@ -34,7 +34,7 @@ class Ui {
     );
   }
 
-  static GetSnackBar ErrorSnackBar(
+  static GetSnackBar errorSnackBar(
       {String title = 'Something went wrong!', required String message}) {
     Get.log("[$title] $message", isError: true);
     return GetSnackBar(

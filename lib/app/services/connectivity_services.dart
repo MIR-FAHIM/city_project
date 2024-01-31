@@ -49,7 +49,7 @@ class ConnectivityController extends GetxController {
         update();
         break;
       default:
-        Get.showSnackbar(Ui.ErrorSnackBar(message: 'Please turn on your internet connection and try again.', title: 'No internet connection.'));
+        Get.showSnackbar(Ui.errorSnackBar(message: 'Please turn on your internet connection and try again.', title: 'No internet connection.'));
 
         break;
     }

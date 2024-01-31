@@ -39,7 +39,7 @@ class SplashView extends GetView<SplashController> {
               child: SizedBox(
                 height: size.width * .50,
                 width: size.width * .50,
-                child: Obx(()=> Image.asset("assets/images/splash_screen/${controller.splashScreenImages.value}")),
+                child: Obx(()=> Image.asset("assets/splash_screen/${controller.splashScreenImages.value}")),
               ),
             ),
 

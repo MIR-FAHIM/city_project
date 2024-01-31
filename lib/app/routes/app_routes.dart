@@ -5,6 +5,8 @@ abstract class Routes {
   Routes._();
   static const SPLASH = _Paths.SPLASH;
   static const HOME = _Paths.HOME;
+  static const TOLETHOME = _Paths.TOLETHOME;
+  static const TOLETDETAILS = _Paths.TOLETDETAILS;
 
 
 }
@@ -14,5 +16,7 @@ abstract class _Paths {
 
   static const HOME = '/home';
   static const SPLASH = '/splash';
+  static const TOLETHOME = '/tolet-home';
+  static const TOLETDETAILS = '/tolet-details';
 
 }

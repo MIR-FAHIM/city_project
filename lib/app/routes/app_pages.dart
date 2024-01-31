@@ -2,6 +2,9 @@ import 'package:cityproject/app/module/home/binding/home_binding.dart';
 import 'package:cityproject/app/module/home/view/home_view.dart';
 import 'package:cityproject/app/module/splash/binding/splash_binding.dart';
 import 'package:cityproject/app/module/splash/view/splash_view.dart';
+import 'package:cityproject/app/module/tolet/binding/tolet_binding.dart';
+import 'package:cityproject/app/module/tolet/view/tolet_details.dart';
+import 'package:cityproject/app/module/tolet/view/tolet_home_view.dart';
 import 'package:get/get.dart';
 
 part 'app_routes.dart';
@@ -22,6 +25,17 @@ class AppPages {
       name: _Paths.HOME,
       page: () => HomeView(),
       binding: HomeBinding(),
+    ),
+    GetPage(
+      name: _Paths.TOLETHOME,
+      page: () => ToletHomeView(),
+      binding: ToletBinding(),
+    ),
+
+    GetPage(
+      name: _Paths.TOLETDETAILS,
+      page: () => ToletDetailsView(),
+      binding: ToletBinding(),
     ),
 
 
