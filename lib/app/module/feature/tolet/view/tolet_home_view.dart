@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:cityproject/app/module/tolet/controller/tolet_controller.dart';
+import 'package:cityproject/app/module/feature/tolet/controller/tolet_controller.dart';
+import 'package:cityproject/app/routes/app_pages.dart';
 import 'package:cityproject/common/Color.dart';
 import 'package:cityproject/common/ui.dart';
 import 'package:dots_indicator/dots_indicator.dart';
@@ -9,7 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 
-import '../../../routes/app_pages.dart';
+
 
 class ToletHomeView extends GetView<ToletController> {
   const ToletHomeView({Key? key}) : super(key: key);

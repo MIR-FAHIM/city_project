@@ -1,7 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:cityproject/app/module/tolet/controller/tolet_controller.dart';
+import 'package:cityproject/app/module/feature/tolet/controller/tolet_controller.dart';
 import 'package:cityproject/app/repositories/listing_rep.dart';
+import 'package:cityproject/app/routes/app_pages.dart';
 import 'package:cityproject/common/Color.dart';
 import 'package:cityproject/common/custom_widget/booking_page_custom_shape.dart';
 import 'package:dots_indicator/dots_indicator.dart';
@@ -14,7 +15,6 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:intl/intl.dart';
 
 
-import '../../../routes/app_pages.dart';
 
 
 class ToletDetailsView extends GetView<ToletController> {

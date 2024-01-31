@@ -4,9 +4,11 @@ import 'dart:io';
 import 'dart:ui';
 import 'package:badges/badges.dart' as badges;
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:cityproject/app/model/home_feature_model.dart';
 import 'package:cityproject/app/module/home/controller/home_controller.dart';
 import 'package:cityproject/app/module/splash/controller/splash_controller.dart';
 import 'package:cityproject/app/routes/app_pages.dart';
+import 'package:cityproject/common/Color.dart';
 import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -278,7 +280,7 @@ class HomeView extends GetView<HomeController> {
     context,
     int? itemCount,
     String? categoryName,
-    List<String>? serviceName,
+    List<HomeFeatureModel>? serviceName,
     List<String>? serviceIcon,
   }) {
     double widthCount = Get.width;
@@ -293,8 +295,8 @@ class HomeView extends GetView<HomeController> {
             .semiBold
             .makeCentered()
             .box
-            .size(widthCount * 0.4, 30)
-            .border(color: redColor)
+            .size(widthCount * 0.4, 30).color(AppColors.primaryLightColor)
+
             .roundedSM
             .make(),
         5.heightBox,
@@ -311,9 +313,8 @@ class HomeView extends GetView<HomeController> {
                   child: Column(
                     children: [
                       InkWell(
-                        onTap: () {
-                          Get.toNamed(Routes.TOLETHOME);
-                        },
+                        onTap:serviceName![index].onPress,
+
                         child: Container(
                           child: Padding(
                             padding: const EdgeInsets.all(15.0),
@@ -331,7 +332,7 @@ class HomeView extends GetView<HomeController> {
                             .color(redColor.withOpacity(0.3))
                             .make(),
                       ),
-                      serviceName![index] //category service name
+                      serviceName![index].name //category service name
                           .toString()
                           .text
                           .size(8)

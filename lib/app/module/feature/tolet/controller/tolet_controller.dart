@@ -11,6 +11,7 @@ import 'package:cityproject/app/model/booking/models/listing/get_fav_listing_mod
 import 'package:cityproject/app/model/booking/models/profile/image_model.dart';
 import 'package:cityproject/app/model/booking/models/profile/profile_model.dart';
 import 'package:cityproject/app/repositories/listing_rep.dart';
+import 'package:cityproject/app/routes/app_pages.dart';
 import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -23,7 +24,7 @@ import 'package:table_calendar/table_calendar.dart';
 import 'package:intl/intl.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../../routes/app_pages.dart';
+
 
 import 'package:video_player/video_player.dart';
 

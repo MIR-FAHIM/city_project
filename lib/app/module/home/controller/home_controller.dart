@@ -1,5 +1,7 @@
 import 'package:cityproject/app/model/district_model.dart';
+import 'package:cityproject/app/model/home_feature_model.dart';
 import 'package:cityproject/app/repositories/home_rep.dart';
+import 'package:cityproject/app/routes/app_pages.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_contacts/flutter_contacts.dart';
 import 'package:get/get.dart';
@@ -25,15 +27,66 @@ class HomeController extends GetxController {
     "assets/service_assets/ambulanceI.png",
   ];
   //Community Service Name
-  List<String> communityServicesName = [
-    "Local News",
-    "Business",
-    "Events",
-    "Hospitals",
-    "Education",
-    "Blood Donate",
-    "Job Find",
-    "Ambulance",
+  List<HomeFeatureModel> communityServicesName = [
+    HomeFeatureModel(
+        name: "Education",
+        onPress: (){
+          Get.toNamed(Routes.TOLETHOME);
+        }
+    ),
+    HomeFeatureModel(
+        name: "Hospitals",
+        onPress: (){
+          Get.toNamed(Routes.TOLETHOME);
+        }
+    ),
+    HomeFeatureModel(
+        name: "Car Rent",
+        onPress: (){
+          Get.toNamed(Routes.TOLETHOME);
+        }
+    ),
+    HomeFeatureModel(
+        name: "Events",
+        onPress: (){
+          Get.toNamed(Routes.TOLETHOME);
+        }
+    ),
+    HomeFeatureModel(
+        name: "Business",
+        onPress: (){
+          Get.toNamed(Routes.TOLETHOME);
+        }
+    ),
+    HomeFeatureModel(
+        name: "Local News",
+        onPress: (){
+          Get.toNamed(Routes.TOLETHOME);
+        }
+    ), HomeFeatureModel(
+        name: "Blood Donate",
+        onPress: (){
+          Get.toNamed(Routes.TOLETHOME);
+        }
+    ), HomeFeatureModel(
+        name: "Job Find",
+        onPress: (){
+          Get.toNamed(Routes.TOLETHOME);
+        }
+    ), HomeFeatureModel(
+        name: "Ambulance",
+        onPress: (){
+          Get.toNamed(Routes.TOLETHOME);
+        }
+    ),
+
+
+
+
+
+
+
+
   ];
 
   //Home Service Category icons
@@ -45,11 +98,35 @@ class HomeController extends GetxController {
   ];
 
   //Home Service Name
-  List<String> homeServicesName = [
-    "Car Rent",
-    "Bill Pay",
-    "Cylinder",
-    "Discount"
+  List<HomeFeatureModel> homeServicesName = [
+    HomeFeatureModel(
+        name: "Car Rent",
+        onPress: (){
+          Get.toNamed(Routes.TOLETHOME);
+        }
+    ),
+    HomeFeatureModel(
+        name: "Bill Pay",
+        onPress: (){
+          Get.toNamed(Routes.TOLETHOME);
+        }
+    ),
+    HomeFeatureModel(
+        name: "Cylinder",
+        onPress: (){
+          Get.toNamed(Routes.TOLETHOME);
+        }
+    ),
+    HomeFeatureModel(
+        name: "Discount",
+        onPress: (){
+          Get.toNamed(Routes.TOLETHOME);
+        }
+    ),
+
+
+
+
   ];
 
 //Utility Service Icons
@@ -61,11 +138,34 @@ class HomeController extends GetxController {
   ];
 
   //Utility Service Name
-  List<String> utilityServicesName = [
-    "24/7 Service",
-    "Repair",
-    "To-Let",
-    "Buy Sell",
+  List<HomeFeatureModel> utilityServicesName = [
+    HomeFeatureModel(
+      name: "24/7 Service",
+        onPress: (){
+        Get.toNamed(Routes.TOLETHOME);
+        }
+    ),
+    HomeFeatureModel(
+        name: "Repair",
+        onPress: (){
+          Get.toNamed(Routes.TOLETHOME);
+        }
+    ),
+    HomeFeatureModel(
+        name: "To-Let",
+        onPress: (){
+          Get.toNamed(Routes.TOLETHOME);
+        }
+    ),
+    HomeFeatureModel(
+        name: "Buy Sell",
+        onPress: (){
+          Get.toNamed(Routes.TOLETHOME);
+        }
+    ),
+
+
+
   ];
 
   //--->List of Trneding Servince<--
